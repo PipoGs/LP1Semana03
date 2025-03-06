@@ -4,7 +4,7 @@ namespace RoPaSci
 {
 
     [Flags]
-    enum Perks
+    enum Items
     {
         Rock,
         Paper,
