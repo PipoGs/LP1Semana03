@@ -10,12 +10,10 @@ namespace HeroPerk
             string perk = args[0].Trim().ToLower();
 
             Perks playerPerks = 0;
-
             int countW = 0;
             int countA = 0;
             int countS = 0;
             int countD = 0;
-
             foreach (char c in perk)
             {
                 if (c != 'w' && c != 'a' && c != 's' && c != 'd')
