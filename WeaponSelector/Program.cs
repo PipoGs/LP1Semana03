@@ -53,6 +53,36 @@ namespace WeaponSelector
         private static bool WeaponsKillEnemy(EnemyType enemy, Weapons weapons)
         {
 
+            if (enemy == EnemyType.Vampire)
+            {
+                if ((weapons & Weapons.Garlic) == Weapons.Garlic)
+                {
+                    return true;
+                }
+            }
+            if (enemy == EnemyType.Vampire)
+            {
+                if ((weapons & Weapons.HolyWater) == Weapons.HolyWater)
+                {
+                    return true;
+                }
+            }
+            else if (enemy == EnemyType.Werewolf)
+            {
+                if ((weapons & Weapons.SilverBullet) == Weapons.SilverBullet)
+                {
+                    return true;
+                }
+
+            }
+            else if (enemy == EnemyType.Zombie)
+            {
+                if ((weapons & Weapons.SilverBullet) == Weapons.SilverBullet)
+                {
+                    return true;
+                }
+            }
+            return false;
 
 
         }
