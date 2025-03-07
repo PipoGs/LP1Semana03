@@ -1,5 +1,5 @@
 ﻿using System;
-using HeroPerks;
+using HeroPerk;
 
 namespace HeroPerk
 {
